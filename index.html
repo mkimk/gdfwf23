@@ -69,6 +69,34 @@
 
         @media screen and (min-width: 780px) and (max-width: 850px) {
             /* Ivy */
+            body{
+                background-color:rgb(0, 140, 255);
+                
+            }
+            #div3{
+                background-color:rgb(255, 0, 225);
+                border: dotted #00a816 5vw;
+                width:20vw;
+                height:20vw;
+                border-radius: 50%;
+                animation:roundOne 6s linear infinite normal running;
+                margin: 0%;
+                padding: 0%;
+                overflow:visible;
+                display:inline-block;
+
+            }
+
+            @keyframes roundOne {
+	            0% {transform:translate(0vw,0vh);float:left;}
+                25% {transform:translate(100vw,0vh);float:right;}
+                50% {transform:translate(100vw,100vh);float:right;}
+                75%{transform:translate(-100vw,100vh);float:left;}
+                100% {transform:translate(-100vw,-100vh);float:left;}
+            }
+
+
+
         }
 
         @media screen and (min-width: 710px) and (max-width: 780px) {
