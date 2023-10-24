@@ -77,7 +77,65 @@
 
         @media screen and (min-width: 640px) and (max-width: 710px) {
             /* Inga */
-        }
+
+            body {
+                background-color: greenyellow;
+                
+
+            }
+
+            #div2 {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 10vw;
+                height: 10vw;
+                padding: 20%;
+                border-radius: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                animation: gelatine 2s infinite, example2 2s infinite;
+
+            }
+                @keyframes gelatine {
+                    from, to { transform: scale(1, 1); }
+                    25% { transform: scale(0.1, 1.1); }
+                    50% { transform: scale(0.9, 3.9); }
+                    75% { transform: scale(6.95, 1.05); }
+                    100% { transform: scale(5.85, 1.03); }
+                }
+
+                @keyframes example2 {
+                from {background-color: purple;}
+                to {background-color: blue;}
+                }
+
+
+    
+
+            div:after{ content: "Click the email link at the bottom of the page for feedback";}
+            
+                            /* The animation code */
+                @keyframes example {
+                from {background-color: red;}
+                to {background-color: yellow;}
+                }
+
+                /* The element to apply the animation to */
+                div {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-name: example;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                }
+
+
+            
+    }
+
+
 
         @media screen and (min-width: 320px) and (max-width: 640px) {
 
