@@ -53,6 +53,83 @@
 
         @media screen and (min-width: 1060px) and (max-width: 1130px) {
             /* Rujia */
+            body {background-color: white;
+            }
+
+            #div7 {
+                width: 500px;
+                height: 500px;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                animation: colorChange 20s infinite;
+                box-shadow: 0 0 5px,
+                            0 0 10px,
+                            0 0 15px,
+                            0 0 20px,
+                            0 0 25px;
+            }
+
+            @keyframes colorChange {
+                0%, 100% { 
+                    background-color: red;
+                    box-shadow: 0 0 20px red,
+                                0 0 40px red,
+                                0 0 60px red,
+                                0 0 80px red,
+                                0 0 100px red; 
+                }
+                14% { 
+                    background-color: orange;
+                    box-shadow: 0 0 20px orange,
+                                0 0 40px orange,
+                                0 0 60px orange,
+                                0 0 80px orange,
+                                0 0 100px orange;
+                }
+                28% { 
+                    background-color: yellow;
+                    box-shadow: 0 0 20px yellow,
+                                0 0 40px yellow,
+                                0 0 60px yellow,
+                                0 0 80px yellow,
+                                0 0 100px yellow;
+                }
+                42% { 
+                    background-color: green;
+                    box-shadow: 0 0 20px green,
+                                0 0 40px green,
+                                0 0 60px green,
+                                0 0 80px green,
+                                0 0 100px green;
+                }
+                57% { 
+                    background-color: blue;
+                    box-shadow: 0 0 20px blue,
+                                0 0 40px blue,
+                                0 0 60px blue,
+                                0 0 80px blue,
+                                0 0 100px blue; 
+                }
+                71% { 
+                    background-color: indigo;
+                    box-shadow: 0 0 20px indigo,
+                                0 0 40px indigo,
+                                0 0 60px indigo,
+                                0 0 80px indigo,
+                                0 0 100px indigo; 
+                }
+                85% { 
+                    background-color: violet;
+                    box-shadow: 0 0 20px violet,
+                                0 0 40px violet,
+                                0 0 60px violet,
+                                0 0 80px violet,
+                                0 0 100px violet; 
+                }
+            }
         }
 
         @media screen and (min-width: 990px) and (max-width: 1060px) {
