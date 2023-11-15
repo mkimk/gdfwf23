@@ -36,6 +36,7 @@
         }
 
         @media screen and (min-width: 1340px) and (max-width: 1410px) {
+
             /*mandy*/
             body {
                 background-color: black;
@@ -46,19 +47,21 @@
             }
 
             #div1 {
-          
+
                 width: 20vw;
                 height: 20vw;
                 background-color: white;
                 border-radius: 50%;
                 box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
-                
+
                 transition: all 0.5s ease;
                 cursor: pointer;
             }
-            4\=
+
             @keyframes shiver {
-                0%, 100% {
+
+                0%,
+                100% {
                     transform: translateX(0);
                 }
 
@@ -77,133 +80,146 @@
                 background-color: black;
             }
         }
+
         @media screen and (min-width: 1270px) and (max-width: 1340px) {
             /* Gina */
 
-        body{
-        background: linear-gradient(to top, #ffffcc 0%, #6699ff 100%);
-        width: 100vw;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-        }
-        #div1{
-        width: 100vh;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(to bottom, #ffffcc 1%, #6699ff 100%);
-        border-radius: 50%;
-        }
+            body {
+                background: linear-gradient(to top, #ffffcc 0%, #6699ff 100%);
+                width: 100vw;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+            }
 
-        /* #div2{
+            #div1 {
+                width: 100vh;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(to bottom, #ffffcc 1%, #6699ff 100%);
+                border-radius: 50%;
+            }
+
+            /* #div2{
             
         } */
-        @keyframes bird{
-            
+            @keyframes bird {}
+
+
+
         }
-    
-        
 
-
-        
 
         @media screen and (min-width: 1200px) and (max-width: 1270px) {
             /* Phoenix */
-        
-        html, body{
-            width: 100%;
-            height: 100%;  
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background: linear-gradient(black, #66A7D9, #A3C0D4, #4A83C4, rgb(223, 208, 230));
+
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background: linear-gradient(black, #66A7D9, #A3C0D4, #4A83C4, rgb(223, 208, 230));
             }
 
 
-        #div1{
-            position: relative; 
-            height: 100%;
-            
-            background: 
-            url(https://cdn.glitch.global/f157d75e-10d8-4998-bae6-17d336275ff8/cloud-8126.png?v=1699997323140);  
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;  
-            
-            animation: move 36s linear infinite;
+            #div1 {
+                position: relative;
+                height: 100%;
+
+                background:
+                    url(https://cdn.glitch.global/f157d75e-10d8-4998-bae6-17d336275ff8/cloud-8126.png?v=1699997323140);
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+
+                animation: move 36s linear infinite;
             }
-            
-        @keyframes move{
-            0% {
-                background-position: 0 200px, 0 300px, 100px 250px;
+
+            @keyframes move {
+                0% {
+                    background-position: 0 200px, 0 300px, 100px 250px;
                 }
-            100% {
-                background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+
+                100% {
+                    background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+                }
             }
-        }
         }
 
         @media screen and (min-width: 1130px) and (max-width: 1200px) {
+
             /* Patrick */
-           body {
-            background-color: black;
-           }
+            body {
+                background-color: black;
+            }
+
             #div14 {
-            margin: 0;
-            height: 23vh;
-            position: relative;
-        }
-        #div14::before {
-            content: 'Circle?';
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: normal;
-            font-size: 25vh;
-            margin: 0;
-            line-height: 23vh;
-            display: block;
-            position: absolute;
-            animation: moveRight 5s linear infinite, changeColor 5s linear infinite;
-        }
-        #div15 {
-            margin: 0;
-            height: 23vh;
-            position: relative;
-        }
-        #div15::before {
-            content: 'Circle?';
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: normal;
-            font-size: 25vh;
-            margin: 0;
-            line-height: 23vh;
-            display: block;
-            position: absolute;
-            animation: moveRight 5s linear infinite, changeColor 5s linear infinite;
-        }
-        @keyframes moveRight {
-            0% {
-                left: 0;
+                margin: 0;
+                height: 23vh;
+                position: relative;
             }
-            50% {
-                left: 50%;
+
+            #div14::before {
+                content: 'Circle?';
+                font-family: Helvetica, Arial, sans-serif;
+                font-weight: normal;
+                font-size: 25vh;
+                margin: 0;
+                line-height: 23vh;
+                display: block;
+                position: absolute;
+                animation: moveRight 5s linear infinite, changeColor 5s linear infinite;
             }
-            100% {
-                left: 100%;
+
+            #div15 {
+                margin: 0;
+                height: 23vh;
+                position: relative;
             }
-        }
-        @keyframes changeColor {
-            0% {
-                color: hotpink;
+
+            #div15::before {
+                content: 'Circle?';
+                font-family: Helvetica, Arial, sans-serif;
+                font-weight: normal;
+                font-size: 25vh;
+                margin: 0;
+                line-height: 23vh;
+                display: block;
+                position: absolute;
+                animation: moveRight 5s linear infinite, changeColor 5s linear infinite;
             }
-            50% {
-                color: yellow;
+
+            @keyframes moveRight {
+                0% {
+                    left: 0;
+                }
+
+                50% {
+                    left: 50%;
+                }
+
+                100% {
+                    left: 100%;
+                }
             }
-            100% {
-                color: lightblue;
+
+            @keyframes changeColor {
+                0% {
+                    color: hotpink;
+                }
+
+                50% {
+                    color: yellow;
+                }
+
+                100% {
+                    color: lightblue;
+                }
             }
-        }
         }
 
         @media screen and (min-width: 1060px) and (max-width: 1130px) {
