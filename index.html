@@ -154,12 +154,13 @@
 
             /* Patrick */
             body {
-                background-color: black;
+                background-color: white;
             }
 
             #div14 {
                 margin: 0;
-                height: 23vh;
+                height: 75vh;
+                width: 100vh;
                 position: relative;
             }
 
@@ -167,43 +168,26 @@
                 content: 'Circle?';
                 font-family: Helvetica, Arial, sans-serif;
                 font-weight: normal;
-                font-size: 25vh;
+                font-size: 30vh;
                 margin: 0;
                 line-height: 23vh;
                 display: block;
                 position: absolute;
-                animation: moveRight 5s linear infinite, changeColor 5s linear infinite;
+                animation: moveVertical 5s linear infinite, changeColor 5s linear infinite;
+                width: 100%;
+                text-align: center;
+                filter: blur(5px);
+                top: 0;
+                letter-spacing: -1.1rem;
             }
 
-            #div15 {
-                margin: 0;
-                height: 23vh;
-                position: relative;
-            }
-
-            #div15::before {
-                content: 'Circle?';
-                font-family: Helvetica, Arial, sans-serif;
-                font-weight: normal;
-                font-size: 25vh;
-                margin: 0;
-                line-height: 23vh;
-                display: block;
-                position: absolute;
-                animation: moveRight 5s linear infinite, changeColor 5s linear infinite;
-            }
-
-            @keyframes moveRight {
-                0% {
-                    left: 0;
+            @keyframes moveVertical {
+                0%, 100% {
+                    top: 2%;
                 }
 
-                50% {
-                    left: 50%;
-                }
-
-                100% {
-                    left: 100%;
+                75% {
+                    top: 98%;
                 }
             }
 
