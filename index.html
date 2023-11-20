@@ -124,17 +124,75 @@
                 background: linear-gradient(black, #66A7D9, #A3C0D4, #4A83C4, rgb(223, 208, 230));
             }
 
+            #div5::before{
+                content:'sun';
+                font-family: Helvetica, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 14px;
+                color: white;
+                mix-blend-mode: overlay;
+                top: calc(110% - 120px);
+                left: calc(60% - 120px);
+                margin: 0;
+                position: absolute;
+                letter-spacing: 60px;
+            }
+
+
+            #div4::before{
+                content:'the';
+                font-family: Helvetica, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 14px;
+                color: white;
+                mix-blend-mode: overlay;
+                top: calc(90% - 120px);
+                left: calc(30% - 120px);
+                margin: 0;
+                position: absolute;
+                letter-spacing: 60px;
+            }
+
+            #div3::before{
+                content:'or';
+                font-family: Helvetica, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 14px;
+                color: white;
+                mix-blend-mode: overlay;
+                top: calc(20% - 120px);
+                left: calc(90% - 120px);
+                margin: 0;
+                position: absolute;
+                letter-spacing: 60px;
+            }
+
+            #div2 {
+                position: absolute;
+                top: calc(70% - 120px);
+                left: calc(70% - 120px);
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+
+                box-shadow:
+                 #fbb825 0px 30px 100px -20px,
+                 #fbcf67 0px -30px 100px -30px;
+                background:
+                    url(https://cdn.glitch.global/f157d75e-10d8-4998-bae6-17d336275ff8/sun.png?v=1700005471711);
+                    background-repeat: no-repeat;
+                    background-size: 200% 200%;
+            }
 
             #div1 {
                 position: relative;
                 height: 100%;
-
                 background:
                     url(https://cdn.glitch.global/f157d75e-10d8-4998-bae6-17d336275ff8/cloud-8126.png?v=1699997323140);
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
 
                 animation: move 36s linear infinite;
             }
