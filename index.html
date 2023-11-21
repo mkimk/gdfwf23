@@ -32,7 +32,181 @@
         }
 
         @media screen and (min-width: 1410px) and (max-width: 1480px) {
+
             /* Clinton */
+            body {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                /* Creates 5 columns */
+                grid-template-rows: repeat(4, 1fr);
+                /* Creates 4 rows */
+                grid-gap: 0px;
+                /* No gap between cells */
+                width: 100vw;
+                /* Full width of the viewport */
+                height: 100vh;
+                /* Full height of the viewport */
+                margin: 0;
+                /* No margin */
+                padding: 0;
+                /* No padding */
+                overflow: auto;
+                /* Allows for scrolling if content overflows */
+                position: relative;
+                background-color: #000;
+            }
+
+            /* Pseudo-element for body background gradient */
+            body::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+                background-image: linear-gradient(to bottom,
+                        hsl(234, 100%, 50%),
+                        hsl(0, 100%, 40%));
+                /* Gradient background */
+                animation: bodyFadeInOut 10s infinite;
+            }
+
+            /* Keyframes for body background gradient animation */
+            @keyframes bodyFadeInOut {
+
+                0%,
+                100% {
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 1;
+                }
+            }
+
+            /* Common styles for all divs */
+            div {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                /* Position relative for pseudo-element positioning */
+                z-index: 1;
+                background-image: linear-gradient(to top,
+                        hsl(234, 100%, 50%),
+                        hsl(0, 100%, 40%));
+            }
+
+            /* Gradient styling and transition for divs */
+            div::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-image: linear-gradient(to bottom,
+                        hsl(234, 100%, 50%),
+                        hsl(0, 100%, 40%));
+                z-index: -1;
+                opacity: 0;
+                animation: fadeInOut 10s infinite;
+            }
+
+            /* Keyframes for fadeInOut animation */
+            @keyframes fadeInOut {
+
+                0%,
+                100% {
+                    opacity: 0;
+                }
+
+                25%,
+                75% {
+                    opacity: 1;
+                }
+            }
+
+            /* Assign different animation delays to each div */
+            #div1::before {
+                animation-delay: 0s;
+            }
+
+            #div2::before {
+                animation-delay: 1s;
+            }
+
+            #div3::before {
+                animation-delay: 2s;
+            }
+
+            #div4::before {
+                animation-delay: 3s;
+            }
+
+            #div5::before {
+                animation-delay: 4s;
+            }
+
+            #div6::before {
+                animation-delay: 5s;
+            }
+
+            #div7::before {
+                animation-delay: 6s;
+            }
+
+            #div8::before {
+                animation-delay: 7s;
+            }
+
+            #div9::before {
+                animation-delay: 8s;
+            }
+
+            #div10::before {
+                animation-delay: 9s;
+            }
+
+            #div11::before {
+                animation-delay: 10s;
+            }
+
+            #div12::before {
+                animation-delay: 11s;
+            }
+
+            #div13::before {
+                animation-delay: 12s;
+            }
+
+            #div14::before {
+                animation-delay: 13s;
+            }
+
+            #div15::before {
+                animation-delay: 14s;
+            }
+
+            #div16::before {
+                animation-delay: 15s;
+            }
+
+            #div17::before {
+                animation-delay: 16s;
+            }
+
+            #div18::before {
+                animation-delay: 17s;
+            }
+
+            #div19::before {
+                animation-delay: 18s;
+            }
+
+            #div20::before {
+                animation-delay: 19s;
+            }
         }
 
         @media screen and (min-width: 1340px) and (max-width: 1410px) {
@@ -124,8 +298,8 @@
                 background: linear-gradient(black, #66A7D9, #A3C0D4, #4A83C4, rgb(223, 208, 230));
             }
 
-            #div5::before{
-                content:'sun';
+            #div5::before {
+                content: 'sun';
                 font-family: Helvetica, Arial, sans-serif;
                 font-weight: bold;
                 font-size: 14px;
@@ -139,8 +313,8 @@
             }
 
 
-            #div4::before{
-                content:'the';
+            #div4::before {
+                content: 'the';
                 font-family: Helvetica, Arial, sans-serif;
                 font-weight: bold;
                 font-size: 14px;
@@ -153,8 +327,8 @@
                 letter-spacing: 60px;
             }
 
-            #div3::before{
-                content:'or';
+            #div3::before {
+                content: 'or';
                 font-family: Helvetica, Arial, sans-serif;
                 font-weight: bold;
                 font-size: 14px;
@@ -176,12 +350,12 @@
                 border-radius: 50%;
 
                 box-shadow:
-                 #fbb825 0px 30px 100px -20px,
-                 #fbcf67 0px -30px 100px -30px;
+                    #fbb825 0px 30px 100px -20px,
+                    #fbcf67 0px -30px 100px -30px;
                 background:
                     url(https://cdn.glitch.global/f157d75e-10d8-4998-bae6-17d336275ff8/sun.png?v=1700005471711);
-                    background-repeat: no-repeat;
-                    background-size: 200% 200%;
+                background-repeat: no-repeat;
+                background-size: 200% 200%;
             }
 
             #div1 {
@@ -189,10 +363,10 @@
                 height: 100%;
                 background:
                     url(https://cdn.glitch.global/f157d75e-10d8-4998-bae6-17d336275ff8/cloud-8126.png?v=1699997323140);
-                    -webkit-background-size: cover;
-                    -moz-background-size: cover;
-                    -o-background-size: cover;
-                    background-size: cover;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
 
                 animation: move 36s linear infinite;
             }
@@ -240,7 +414,9 @@
             }
 
             @keyframes moveVertical {
-                0%, 100% {
+
+                0%,
+                100% {
                     top: 2%;
                 }
 
