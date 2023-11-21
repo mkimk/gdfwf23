@@ -24,9 +24,87 @@
         }
 
         @media screen and (min-width: 1550px) and (max-width: 1620px) {
-            /* Emily */
-        }
 
+            /* Emily */
+            
+            body {
+                background-color:#ae2f1c;
+            }
+
+            #div3 {
+                display:block;
+                position:absolute;
+                top:40%;
+                left:60%;
+                border-radius:100%;
+                width:5vw;
+                height:5vw;
+                background-color: black;
+                animation: move3 3s infinite;
+                animation-direction: alternate;
+            }
+
+
+            #div2 {
+                display:block;
+                position:absolute;
+                top:30%;
+                left:55%;
+                border-radius:100%;
+                width:10vw;
+                height:10vw;
+                background-color: #da7b75;
+                animation: move1 3s infinite;
+                animation-direction: alternate;
+            }
+
+            #div1 {
+                display:block;
+                position:absolute;
+                top:20%;
+                left:50%; 
+                border-radius:100%;
+                width:20vw;
+                height:20vw;
+                background: radial-gradient(#d7b61d, #4c80ba);
+                animation: move2 3s infinite;
+                animation-direction: alternate;
+            }
+
+            @keyframes move1 {
+                from {
+                    width:10vw;
+                    height:10vw;
+                }
+                to {
+                    width:30vw;
+                    height:30vw}
+            }
+
+            @keyframes move2 {
+                from {
+                    width:20vw;
+                    height:20vw;
+                }
+                to {
+                    width:60vw;
+                    height:60vw}
+            }
+
+            @keyframes move3 {
+                from {
+                    width:5vw;
+                    height:5vw;
+                }
+                to {
+                    width:15vw;
+                    height:15vw}
+            }
+        
+        }
+           
+
+    
         @media screen and (min-width: 1480px) and (max-width: 1550px) {
             /* Jay */
         }
