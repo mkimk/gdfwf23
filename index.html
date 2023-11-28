@@ -21,7 +21,38 @@
     <style>
         @media screen and (min-width: 1615px) {
             /* Alina */
-        }
+            #div1 {
+                
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    /* background: radial-gradient(firebrick 8%, darkorange 30%, orange 34%, yellow 49%, khaki 54%, #222222 70%); */
+
+    background: radial-gradient(rgb(247, 238, 143) 5%, rgb(243, 232, 28) 20%, orange 34%, darkorange 40%, firebrick 54%, #222222 70%);
+    
+    background-size: 100% 100%;  
+    animation: aurora 14s ease infinite;
+}
+
+@keyframes aurora {
+    0% {background-size: 100% 10%}
+    15% {background-size: 25%  15%}
+    35% {background-size: 10% 20%}
+  
+      50% {background-size: 5% 50%}
+      70% {background-size: 2% 100%}
+      80% {background-size: 5% 50%}
+
+   90% {background-size: 25% 15%}
+  
+      100% {background-size: 100% 10%}
+
+    }
+            }
+        
 
         @media screen and (min-width: 1550px) and (max-width: 1615px) {
 
